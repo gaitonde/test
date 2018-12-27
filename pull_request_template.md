@@ -1,3 +1,1 @@
-Jira ticket:
-
 depends on: <replace_with_full_url_to_the_dependent_pr_or_delete_if_not_needed>
