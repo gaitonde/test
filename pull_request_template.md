@@ -1,1 +1,2 @@
-jira: <replace_with_full_url_to_the_dependent_pr_or_delete_if_not_needed>
+Jira: https://ringdna.atlassian.net/browse/TEST2-5
+Depends on: 
