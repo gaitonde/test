@@ -1,0 +1,15 @@
+version: 3
+
+pullapprove_conditions:
+- condition: "base.ref == 'master'" # only review things being merged into master
+  unmet_status: success
+  explanation: "Review not required unless merging to master"
+- condition: "'nocheck' not in labels"  # let certain PRs go through without review
+  unmet_status: success
+  explanation: "Skipping reviews for PRs labeled with 'nocheck'"
+
+groups:
+  perf:
+    reviewers:
+      users:
+      - gaitonde    
